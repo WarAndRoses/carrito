@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <!-- este boton mostrara el menu disponible de productos a seleccionar-->
+    <button class="menu" onclick="showList()">Menu</button>
+    <!-- Aqui se desplega el array de productos-->
+    <ul id="showMenu"></ul>
+    <ul id="precios"></ul>
+    
+    <!-- Estos botones agregan productos aplicando la multiplicacion de (cantidad de articulos x precio producto)-->
+    <div id="main">
+        <input  class="agregar" type="number" id="cantidad0" min="1">
+        <input  class="agregar" type="number" id="cantidad1" min="1">
+        <input  class="agregar" type="number" id="cantidad2" min="1">
+        <input  class="agregar" type="number" id="cantidad3" min="1">
+        <input  class="agregar" type="number" id="cantidad4" min="1">
+        
+    </div>
+    <div id="mas">
+        <button class="more" onclick="addItem(0)">+</button>
+        <button class="more" onclick="addItem(1)">+</button>
+        <button class="more" onclick="addItem(2)">+</button>
+        <button class="more" onclick="addItem(3)">+</button>
+        <button class="more" onclick="addItem(4)">+</button>
+       
+    </div>
+    <!--Este campo muestra detalle en tiempo real de la compra previa-->
+    <input type="text" id="preview" disabled>
+    <!--Estos botones permiten remover articulos-->
+    <div id="remove">
+        <button class="quitar" onclick="removeItem()">-</button>
+        <button class="quitar" onclick="removeItem1()">-</button>
+        <button class="quitar" onclick="removeItem2()">-</button>
+        <button class="quitar" onclick="removeItem3()">-</button>
+        <button class="quitar" onclick="removeItem4()">-</button>
+       
+    </div>
+    <!--con este boton cancelas la compra y vuelves todo a cero-->
+    <button class="cancelar" onclick="cancelOrder()">Cancelar</button>
+    <!--Este boton confirma la compra y muestra el total-->
+    <button class="confirmar" onclick="confirmOrder()">Confirmar</button>
+    <!--Este campo muestra el total de la compra-->
+    <input type="text" id="total" disabled>
+
+
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>

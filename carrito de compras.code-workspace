@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../calculadora"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "carrito de compras"
+	}
+}

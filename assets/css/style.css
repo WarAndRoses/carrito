@@ -1,15 +1,50 @@
 
-body{
+.principal{
+    
+    background-color: #f0f0f0;
     margin: 0;
-   display: grid;
+    display: grid;
     border: 1px solid;
     grid-template-columns: repeat(24,1fr);
-    grid-template-rows: repeat(7,1fr);
-
+    grid-template-rows: repeat(8,1fr);
+    border-radius: 5px;
 }
+
+.titleProducto{
+    grid-column: span 7;
+    grid-row: span 1;
+    border: 1px solid;
+    border-radius: 4px;
+}
+.agregarProducto{
+    grid-column: span 3;
+    grid-row: span 1;
+    border: 1px solid;
+    border-radius: 4px;
+}
+.previewTotal{
+    grid-column: span 8;
+    grid-row: span 1;
+    border: 1px solid;
+    border-radius: 4px;
+}
+.priceProducto{
+    grid-column: span 3;
+    grid-row: span 1;
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+.quitarProducto{
+    grid-column: span 3;
+    grid-row: span 1;
+    border: 1px solid;
+    border-radius: 4px;
+}
+
 #main{
     grid-column: span 2;
-  grid-row: span 5;
+    grid-row: span 5;
 }
 
 #showMenu {
@@ -18,38 +53,48 @@ body{
     grid-column: span 6;
     grid-row: span 5;
 }
+
 #precios{
     margin: 5px;
     list-style-type: none;
     grid-row: span 5;
     grid-column: span 4;
 }
+
 #preview{
     grid-column: span 10;
     grid-row: span 5;
 }
+
 .menu{
     grid-column: span 24;
     grid-row: span 1;
-  
+    background-color: rgb(132, 192, 192);
 }
+
 .agregar, .quitar, .more{
     width: 100%
 }
 
 #remove, #mas{
     grid-column: span 1;
- 
-  grid-row: span 5;
-
+    grid-row: span 5;
 }
-.cancelar , .confirmar {
+
+.cancelar  {
     grid-column: span 6;
     grid-row: span 1;
+    background-color: #e49581;
+    
 }
 
 #total{
     grid-column: span 12;
     grid-row: span 1;
     
+}
+.confirmar {
+    grid-column: span 6;
+    grid-row: span 1;
+    background-color: #71c771;
 }

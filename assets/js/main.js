@@ -1,9 +1,9 @@
 
-let productos = ["pan de molde",
-    "queso",
-    "mermelada",
-    "Paltas",
-    "tomates"];
+let productos = ["Pan de molde",
+    "Queso Crema",
+    "Mermelada",
+    "Palta Hass",
+    "Tomates cherry"];
 
 
     let totalCompra = 0;
@@ -26,7 +26,7 @@ function showList(){
 
     precios.forEach(itemPrecio =>{
         let li = document.createElement("li");
-        li.textContent = itemPrecio;
+        li.textContent = `$${itemPrecio}`
         price.appendChild(li);
     });
 }
@@ -44,6 +44,22 @@ function addItem(index){
 
 }
 
+
+
+function removeItem(index){
+    let cantidad = document.getElementById(`cantidad${index}`).value;
+    cantidad = parseInt(cantidad) || 0;
+    let precio = precios[index];
+    let total = precio * cantidad;
+
+    totalCompra -= total;
+
+    let preview = document.getElementById("preview");
+    preview.value = `Total Acumulado: $${totalCompra}`;
+
+    document.getElementById(`cantidad${index}`).value= "";
+}
+
 function cancelOrder(){
     for (let i = 0; i < productos.length; i++) {
         document.getElementById(`cantidad${i}`).value = "";
@@ -59,5 +75,5 @@ function cancelOrder(){
 
 function confirmOrder(){
    let msjFinal = document.getElementById("total");
-   msjFinal.value = `Gracias Por su compra`;
+   msjFinal.value = `Compra total : $${totalCompra} Gracias por su compra `;
 }

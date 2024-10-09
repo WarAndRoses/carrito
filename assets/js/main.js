@@ -1,4 +1,4 @@
-
+// productos disponibles para la venta
 let productos = ["Pan de molde",
     "Queso Crema",
     "Mermelada",
@@ -7,9 +7,12 @@ let productos = ["Pan de molde",
 
 
     let totalCompra = 0;
-
+// lista de precios de productos mencionados arriba
 
 let precios = [ 1000 , 1200 , 1300 , 1400 , 1500];
+
+// muestra la lista de productos y precios en la página
+
 
 function showList(){
     let list = document.getElementById("showMenu");
@@ -31,6 +34,7 @@ function showList(){
     });
 }
 
+// agregar un item al carrito de compras
 function addItem(index){
     let cantidad = document.getElementById(`cantidad${index}`).value;
     cantidad = parseInt(cantidad) || 0;
@@ -44,7 +48,7 @@ function addItem(index){
 
 }
 
-
+//quita items del carrito
 
 function removeItem(index){
     let cantidad = document.getElementById(`cantidad${index}`).value;
@@ -60,6 +64,7 @@ function removeItem(index){
     document.getElementById(`cantidad${index}`).value= "";
 }
 
+// cancela la orden y limpia el carrito
 function cancelOrder(){
     for (let i = 0; i < productos.length; i++) {
         document.getElementById(`cantidad${i}`).value = "";
@@ -73,6 +78,7 @@ function cancelOrder(){
     final.value = "";
 }
 
+// confirma la orden
 function confirmOrder(){
    let msjFinal = document.getElementById("total");
    msjFinal.value = `Compra total : $${totalCompra} Gracias por su compra `;

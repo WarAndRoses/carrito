@@ -76,6 +76,10 @@ function cancelOrder(){
 
     let final = document.getElementById("total");
     final.value = "";
+
+  
+
+
 }
 
 // confirma la orden

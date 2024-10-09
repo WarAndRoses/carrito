@@ -63,6 +63,7 @@
 #preview{
     grid-column: span 10;
     grid-row: span 5;
+    text-align: center;
 }
 
 .menu{

@@ -9,6 +9,7 @@
 <body>
     <div class="principal">
     <!-- este boton mostrara el menu disponible de productos a seleccionar-->
+
     <button class="menu" onclick="showList()">Mostrar Menu</button>
     <div class="titleProducto">Productos</div>
     <div class="priceProducto">Precios</div>
@@ -18,6 +19,7 @@
     <!-- Aqui se desplega el array de productos-->
     <ul id="showMenu"></ul>
     <ul id="precios"></ul>
+
     <!--Aqui se introduce el numero de articulos que se desean agregar al carrito-->
     <div id="main">
         <input  class="agregar" type="number" id="cantidad0" min="1">
@@ -35,28 +37,33 @@
         <button class="more" onclick="addItem(2)">+</button>
         <button class="more" onclick="addItem(3)">+</button>
         <button class="more" onclick="addItem(4)">+</button>
-       
     </div>
+
     <!--Este campo muestra el total acumulado de la compra -->
+
     <input type="text" id="preview" disabled>
+
     <!--Estos botones permiten remover articulos-->
+
     <div id="remove">
         <button class="quitar" onclick="removeItem(0)">-</button>
         <button class="quitar" onclick="removeItem(1)">-</button>
         <button class="quitar" onclick="removeItem(2)">-</button>
         <button class="quitar" onclick="removeItem(3)">-</button>
         <button class="quitar" onclick="removeItem(4)">-</button>
-       
     </div>
     <!--con este boton cancelas la compra y vuelves todo a cero-->
+
     <button class="cancelar" onclick="cancelOrder()">Cancelar</button>
     <!--Este boton confirma la compra y muestra el total-->
+
     <button class="confirmar" onclick="confirmOrder()">Confirmar</button>
     <!--Este campo muestra el total de la compra-->
-    <input type="text" id="total" disabled>
 
+    <input type="text" id="total" disabled>
 </div>
-    <script src="./assets/js/main.js"></script>
+
+    <script src="/assets/js/script.js"></script>
 
 </body>
 </html>

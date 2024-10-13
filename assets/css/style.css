@@ -10,7 +10,7 @@
 }
 
 .titleProducto{
-    grid-column: span 7;
+    grid-column: span 6;
     grid-row: span 1;
     border: 1px solid;
     border-radius: 4px;
@@ -28,7 +28,7 @@
     border-radius: 4px;
 }
 .priceProducto{
-    grid-column: span 3;
+    grid-column: span 4;
     grid-row: span 1;
     border: 1px solid;
     border-radius: 4px;
@@ -73,7 +73,9 @@
 }
 
 .agregar, .quitar, .more{
-    width: 100%
+    width: 100%;
+    
+    
 }
 
 #remove, #mas{

@@ -1,13 +1,9 @@
-// Clase para representar un producto
 class Producto {
     constructor(nombre, precio) {
         this.nombre = nombre;
         this.precio = precio;
     }
-}
-
-// Clase para manejar el carrito de compras
-class Carrito {
+}class Carrito {
     constructor() {
         this.items = [];
         this.totalCompra = 0;
@@ -40,7 +36,6 @@ class Carrito {
     }
 }
 
-// Productos disponibles
 let productos = [
     new Producto("Pan de molde", 1000),
     new Producto("Queso Crema", 1200),
